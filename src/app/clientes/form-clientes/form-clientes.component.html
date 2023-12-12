@@ -1,0 +1,48 @@
+<div class="card p-3 mt-3 fundo">
+    <form class="row g-3 needs-validation" novalidate [formGroup]="form">
+        <div class="col-sm-12">
+            <label for="nome" class="form-label">Nome do cliente</label>
+            <input type="text" class="form-control" id="nome" 
+            placeholder="Nome do cliente" formControlName="nome">
+            <div class="invalid-feedback">
+                Informe o nome do cliente!!!
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <label for="nome" class="form-label">CPF do cliente</label>
+            <input type="text" class="form-control" id="nome" 
+            placeholder="Cpf do cliente" formControlName="cpf">
+            <div class="invalid-feedback">
+                Informe o CPF do cliente!!!
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <label for="nome" class="form-label">RG do cliente</label>
+            <input type="text" class="form-control" id="nome" 
+            placeholder="Rg do cliente" formControlName="rg">
+            <div class="invalid-feedback">
+                Informe o RG do cliente!!!
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <label for="nome" class="form-label">Endereço do cliente</label>
+            <input type="text" class="form-control" id="nome" 
+            placeholder="Endereço do cliente" formControlName="endereco">
+            <div class="invalid-feedback">
+                Informe o endereço do fornecedor!!!
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <label for="nome" class="form-label">Email do cliente</label>
+            <input type="text" class="form-control" id="nome" 
+            placeholder="Email do cliente" formControlName="email">
+            <div class="invalid-feedback">
+                Informe o email do cliente!!
+            </div>
+        </div>
+        <div class="col-12 d-flex justify-content-end">
+            <button class="btn botao me-2" type="submit" (click)="Salvar()">Salvar</button>
+            <button class="btn btn-danger" type="submit" (click)="Cancelar()">Cancelar</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,48 @@
+<div class="card p-3 mt-3 fundo">
+    <form class="row g-3 needs-validation" novalidate [formGroup]="form">
+        <div class="col-sm-12">
+            <label for="nome" class="form-label">Nome do fornecedor</label>
+            <input type="text" class="form-control" id="nome" 
+            placeholder="Nome do fornecedor" formControlName="nome">
+            <div class="invalid-feedback">
+                Informe o nome do fornecedor!!!
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <label for="nome" class="form-label">CNPJ do fornecedor</label>
+            <input type="text" class="form-control" id="nome" 
+            placeholder="Cnpj do fornecedor" formControlName="cnpj">
+            <div class="invalid-feedback">
+                Informe o CNPJ do fornecedor !!!
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <label for="nome" class="form-label">IE do fornecedor</label>
+            <input type="text" class="form-control" id="nome" 
+            placeholder="Ie do fornecedor" formControlName="ie">
+            <div class="invalid-feedback">
+                Informe o IE do fornecedor!!!
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <label for="nome" class="form-label">Endereço do fornecedor</label>
+            <input type="text" class="form-control" id="nome" 
+            placeholder="Endereço do fornecedor" formControlName="endereco">
+            <div class="invalid-feedback">
+                Informe o endereço do fornecedor!!!
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <label for="nome" class="form-label">Email do fornecedor</label>
+            <input type="text" class="form-control" id="nome" 
+            placeholder="Email do fornecedor" formControlName="email">
+            <div class="invalid-feedback">
+                Informe o email do fornecedor!!!
+            </div>
+        </div>
+        <div class="col-12 d-flex justify-content-end">
+            <button class="btn botao me-2" type="submit" (click)="Salvar()">Salvar</button>
+            <button class="btn btn-danger" type="submit" (click)="Cancelar()">Cancelar</button>
+        </div>
+    </form>
+</div>

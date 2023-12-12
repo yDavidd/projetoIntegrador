@@ -1,0 +1,37 @@
+<div class="card mt-3 cartao">
+    <div class="d-flex justify-content-between align-items-center p-3 roxo">
+        <h1 class="text-white">Funcionários</h1>
+        <button class="btn botao" [routerLink]="['novo']">Novo Funcionário</button>
+    </div>
+    
+    <div class="card-body card">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Funcionário</th>
+                    <th>Cargo</th>
+                    <th>Salário</th>
+                    <th>Área de atuação</th>
+                    <th>Local de trabalho</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let funcionario of funcionarios">
+                    <td>{{ funcionario.id }}</td>
+                    <td>{{ funcionario.nome }}</td>
+                    <td>{{ funcionario.cargo }}</td>
+                    <td>{{ funcionario.salario }}</td>
+                    <td>{{ funcionario.areaAtuacao }}</td>
+                    <td>{{ funcionario.localTrabalho }}</td>
+                    <td> 
+                        <span class="d-flex justify-content-end">
+                            <button type="button" class="btn btn-primary  me-2" (click)="Editar(funcionario.id)">Atualizar</button>
+                            <button type="button" class="btn btn-danger" (click)="Excluir(funcionario.id)">Deletar</button>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>  
